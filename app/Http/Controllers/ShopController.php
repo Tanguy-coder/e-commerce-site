@@ -17,7 +17,7 @@ class ShopController extends Controller
     {
         $latests = DB::select('select * from products order by id desc limit 6');
 
-        return view('Shop\shop',compact('latests'));
+        return view('Home.shop',compact('latests'));
     }
 
     /**
